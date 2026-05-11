@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Inter:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-baseball-red: #FF4D00;
+  --color-grass-green: #4CAF50;
+  --color-clay-brown: #92400e;
+  --color-sky-blue: #38bdf8;
+  --color-baseball-white: #FDFCF0;
+  --color-primary-dark: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#FDFCF0] text-[#1A1A1A];
+  }
+}
+
+.bold-border {
+  @apply border-4 border-[#1A1A1A];
+}
+
+.bold-border-b {
+  @apply border-b-4 border-[#1A1A1A];
+}
+
+.bold-border-r {
+  @apply border-r-4 border-[#1A1A1A];
+}
+
+.bold-heading {
+  @apply font-black leading-[0.85] tracking-tighter uppercase italic;
+}
+
+.baseball-shadow {
+  @apply shadow-[4px_4px_0px_0px_rgba(26,26,26,1)];
+}
+
